@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200pt"
+        android:layout_margin="10pt"
+        app:cardCornerRadius="5pt">
+
+        <ImageView
+            android:id="@+id/movieposter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradasi"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:paddingLeft="5pt">
+
+            <TextView
+                android:id="@+id/judulfilm"
+                android:layout_below="@+id/rilisfilm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie Title"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black"
+                android:textSize="14pt"/>
+            <TextView
+                android:id="@+id/rilisfilm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Movie Release"
+                android:fontFamily="sans-serif"
+                android:textSize="8pt"/>
+
+            <TextView
+                android:id="@+id/deskripsifilm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judulfilm"
+                android:fontFamily="sans-serif"
+                android:lines="3"
+                android:layout_marginBottom="18pt"
+                android:text="Movie Description"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
